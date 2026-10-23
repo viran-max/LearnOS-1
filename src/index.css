@@ -1,0 +1,222 @@
+/* AI hub Admin sub navigations  */
+.aihub-subnav{
+    margin-bottom:3rem;
+}
+
+.aihub-subnav-group{
+    background: #ffffff;
+    border: 1px solid #e5e8ee;
+    border-radius: 16px;
+    padding: 20px;
+    height:100%;
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.aihub-subnav-group.is-active-group {
+  border-color: rgba(13, 110, 253, 0.35);
+  box-shadow: 0 6px 18px rgba(13, 110, 253, 0.08);
+}
+
+.aihub-subnav-group-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1c2434;
+  margin-bottom: 14px;
+}
+
+.aihub-subnav-group-label i {
+  font-size: 1.3rem;
+  color: #0d6efd;
+}
+
+.aihub-subnav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.aihub-subnav-link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #495569;
+  background: #f4f6f9;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.aihub-subnav-link:hover {
+  background: #e9f1ff;
+  color: #0d6efd;
+}
+
+.aihub-subnav-link.active {
+  background: #0d6efd;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.25);
+}
+
+@media (max-width: 767px) {
+  .aihub-subnav-links {
+    flex-direction: column;
+  }
+}
+
+/* ===== AI Hub Admin Page Header*/
+.aihub-page-header {
+  background: linear-gradient(90deg, #0d6efd 0%, #3b82f6 100%);
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+.aihub-page-header h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.aihub-page-header p {
+  margin: 6px 0 0;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+/* ===== Site Footer ===== */
+.footer-top-accent {
+  height: 4px;
+  background: linear-gradient(90deg, #0d6efd 0%, #3b82f6 50%, #6ea8fe 100%);
+}
+
+.footer-brand-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(13, 110, 253, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6ea8fe;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  padding: 7px 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.footer-link i {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.4);
+  transition: color 0.2s ease;
+  width: 16px;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.footer-link:hover i {
+  color: #6ea8fe;
+}
+
+.footer-heading {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===== Site Navbar ===== */
+.navbar-logo {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-brand-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.site-navbar .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #495057;
+  position: relative;
+  padding: 0.5rem 0.7rem !important;
+  transition: color 0.2s ease;
+}
+
+
+.site-navbar .nav-link i {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.active {
+  color: #0d6efd;
+}
+
+.site-navbar .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0.7rem;
+  right: 0.7rem;
+  bottom: -2px;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #0d6efd 0%, #3b82f6 100%);
+}
+
+.navbar-user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d6efd 0%, #3b82f6 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.navbar-cta {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
